@@ -1,0 +1,64 @@
+.lineGoPage2 {
+    background-color:#9747FF;
+    width: 500px;
+    height: 2px;
+}
+.whatYear {
+    margin-top: -8px;
+    height: 65px;
+    background-color:#F4F4F6;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+}
+.whatYearInput {
+    display: none;
+}
+.radioWhatYearInput {
+    display:table-cell;
+    position: relative;
+    border: none;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color:#f3f3f3;
+    font-family: 'Museo Sans Cyrl300'; 
+}
+.radioWhatYearInput:hover {
+    background-color:#e9e9e9d0;
+}
+.radioWhatYearInput:before {
+    content: '';
+    background-color: #7953C3;
+    color:#ffffff;
+    width: 60px;
+    height: 60px;
+    opacity: 0;
+    border-radius: 10px;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+}
+.whatYearInput:checked + .radioWhatYearInput::before {
+    opacity: 1;
+}
+#radioN1::after {content:'1'; color:#ffffff; right:25px; position:absolute; opacity:0;}
+#radioN2::after {content:'2'; color:#ffffff; right:25px; position:absolute; opacity:0;}
+#radioN3::after {content:'3'; color:#ffffff; right:25px; position:absolute; opacity:0;}
+#radioN4::after {content:'4'; color:#ffffff; right:25px; position:absolute; opacity:0;}
+#radioN5::after {content:'5'; color:#ffffff; right:25px; position:absolute; opacity:0;}
+#radioN6::after {content:'6'; color:#ffffff; right:25px; position:absolute; opacity:0;}
+.whatYearInput:checked + #radioN1::after,
+.whatYearInput:checked + #radioN2::after,
+.whatYearInput:checked + #radioN3::after,
+.whatYearInput:checked + #radioN4::after,
+.whatYearInput:checked + #radioN5::after,
+.whatYearInput:checked + #radioN6::after {
+    opacity: 1;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homeet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylePage2.css">
+</head>
+<body>
+    <header class="header">
+        <img src="/src/icons/logo.svg" alt="photo" style="margin: 6px 20px;">
+        <button id="button1" class="button">Выйти из аккаунта</button>
+    </header>
+    <section class="sectionSignUp">
+        <div>
+            <form action="http://127.0.0.1:5500/src/Page1.html">
+                <button class="button">Назад</button>
+            </form>
+            <section style="display: flex;">
+                <h1 class="h1">Создание профиля</h1>
+                <p class="p1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Образование</p>
+            </section>
+            <div class="line"><div class="lineGoPage2"></div></div>
+        </div>
+        <div class="basePart">
+            <div class="firstParagraph">
+                <div style="margin-top: 10px; font-family: 'Museo Sans Cyrl300';">
+                    <label><input type="radio" name="radio" value="man" class="inputYesNo"><div class="radio"></div>Выпусник&nbsp;/&nbsp;Студент</label>
+                    <label><input type="radio" name="radio" value="woman" class="inputYesNo"><div class="radio" style="margin-left: 15px"></div>Сотрудник</label>
+                </div>
+                <p class="text" style="margin-top: 25px;">Курс</p>
+                <div class="whatYear">
+                    <label><input type="radio" name="whatYear" value="1" class="whatYearInput"><div class="radioWhatYearInput" id="radioN1">1</div></label>
+                    <label><input type="radio" name="whatYear" value="2" class="whatYearInput"><div class="radioWhatYearInput" id="radioN2">2</div></label>
+                    <label><input type="radio" name="whatYear" value="3" class="whatYearInput"><div class="radioWhatYearInput" id="radioN3">3</div></label>
+                    <label><input type="radio" name="whatYear" value="4" class="whatYearInput"><div class="radioWhatYearInput" id="radioN4">4</div></label>
+                    <label><input type="radio" name="whatYear" value="5" class="whatYearInput"><div class="radioWhatYearInput" id="radioN5">5</div></label>
+                    <label><input type="radio" name="whatYear" value="6" class="whatYearInput"><div class="radioWhatYearInput" id="radioN6">6</div></label>
+                </div>
+                <div style="margin-top: 10px; font-family: 'Museo Sans Cyrl300';">
+                <label><input type="radio" name="whatYear" value="graduate" class="inputYesNo"><div class="radio"></div>Уже окончил Вышку</label>
+                </div>
+                <input type="text" value="" class="registrationFieldInput" placeholder="Ступень образования"></input>
+                <input type="text" value="" class="registrationFieldInput" placeholder="Факультет"></input>
+                <input type="text" value="" class="registrationFieldInput" placeholder="Образовательная программа"></input>
+                <input type="text" value="" class="registrationFieldInput" placeholder="Работа"></input>
+            </div>
+            <div class="secondParagraph" style="margin-top: -5px;">
+                <p class="text">Так будет выглядеть твоя будущая страничка</p>
+                <section class="yourProfile">
+                    <div class="secondParagraphFirstColumn">
+                        <article class="yourProfilePhoto"></article>
+                        <button class="button" id="buttonYourProfilePhoto">Показать контакты</button>
+                    </div>
+                    <div class="secondParagraphSecondColumn">
+                    </div>
+                </section>
+                <section class="yourProfileDown">
+                    <div class="yourProfileDownText">
+                        <div class="yourProfileDownTextLeft">
+                            <p style="font-size: larger;"><b>Расскажи где ты учишься</b></p>
+                            <p class="text">Часто стденты ищут соседей по схожим интересам</p>
+                        </div>
+                        <div class="yourProfileDownTextRight">
+                            <img src="/src/icons/happySmile.png" alt="photo" class="smile" style="margin-top: 10px;">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div>
+            <button class="button" id="buttonContinue">Продолжить</button>
+        </div>
+    </section>
+    <section>
+        <div style="margin-top: 200px;" class="line"></div>
+        <div class="leg">
+            <p class="supportEmail">Support@homeet.com</p>
+            <p style="margin-top: -30px;" class="downText">Техническая поддержка</p>
+            <section class="xuina">
+                <p class="zaebalo">О сервисе</p>
+                <p class="zaebalo">Контакты</p>
+                <p class="zaebalo">Политика конфиденциальности</p>
+            </section>
+            <div style="margin-top: 100px;" class="line"></div>
+            <p style="margin-top: 60px;" class="downText">Предложение не является публичной офертой.</p>
+            <p style="margin-top: -13px;" class="downText">Сервис не несет ответственности за действия пользователей,
+            достоверность информации и т.д.</p>
+        </div>
+    </section>
+</body>
+</html>

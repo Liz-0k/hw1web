@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homeet</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="/src/icons/logo.svg" alt="photo" style="margin: 6px 20px;">
+        <button id="button1" class="button">Выйти из аккаунта</button>
+    </header>
+    <section class="sectionSignUp">
+        <div>
+            <button class="button">На главную</button>
+            <section style="display: flex;">
+                <h1 class="h1">Создание профиля</h1>
+                <p class="p1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp; О себе</p>
+            </section>
+            <div class="line"><div class="lineGo"></div></div>
+        </div>
+        <div class="basePart">
+            <div class="firstParagraph">
+                <div class="sendPhoto">
+                    <div>
+                        <p style="font-size: larger; font-family: 'Museo Sans Cyrl500';">Аватар профиля</p>
+                        <button class="button" id="buttonSendPhoto" >
+                            <!-- <input type="file" name="photo" multiple accept="image/*"> -->
+                            Загрузить</button>
+                    </div>
+                    <p class="paleText">Загрузите фотографию весом не более 10 мб</p>
+                </div>
+                <form class="firstParagraphSignUp">
+                    <input name="name" value="" class="registrationFieldInput" placeholder="Имя и фамилия"></input>
+                    <div style="margin-top: 10px; font-family: 'Museo Sans Cyrl300';">
+                        <label><input type="radio" name="radio" value="man" class="inputYesNo"><div class="radio"></div>Парень</label>
+                        <label><input type="radio" name="radio" value="woman" class="inputYesNo"><div class="radio" style="margin-left: 15px"></div>Девушка</label>
+                    </div>
+                    <input type="text" value="" class="registrationFieldInput" placeholder="Дата рождения"></input>
+                    <input type="text" value="" class="registrationFieldInput" placeholder="Телеграмм"></input>
+                    <input type="text" value="" class="registrationFieldInput" placeholder="Номер телефона"></input>
+                    <textarea type="text" value="" class="registrationFieldInput" rows="6" placeholder="О себе"></textarea>
+                </form>
+                <p class="exampleText">Например: Редко готовлю, но люблю ботать на кухне по ночам.
+                    Хочу завести собаку.
+                    Очень люблю читать, играть в хорроры и смотреть аниме.
+                    Открыт к общению и взаимопомощи :)</p>
+            </div>
+            <div class="secondParagraph">
+                <p class="text">Так будет выглядеть твоя будущая страничка</p>
+                <section class="yourProfile">
+                    <div class="secondParagraphFirstColumn">
+                        <article class="yourProfilePhoto"></article>
+                        <button class="button" id="buttonYourProfilePhoto">Показать контакты</button>
+                    </div>
+                    <div class="secondParagraphSecondColumn">
+                    </div>
+                </section>
+                <section class="yourProfileDown">
+                    <div class="yourProfileDownText">
+                        <div class="yourProfileDownTextLeft">
+                            <p style="font-size: larger;"><b>Мы совсем ничего про тебя не знаем</b></p>
+                            <p class="text" style="margin: -10px 0 -15px;">Расскажи о себе</p>
+                            <p class="text">Люди пишут тем, кому доверяют. Тем более при поиске соседа</p>
+                        </div>
+                        <div class="yourProfileDownTextRight">
+                            <img src="/src/icons/sadSmile.svg" alt="photo" class="smile">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div>
+            <form action="http://127.0.0.1:5500/src/Page2.html">
+                <button class="button" id="buttonContinue">Продолжить</button>
+            </form>
+        </div>
+    </section>
+    <section>
+        <div style="margin-top: 200px;" class="line"></div>
+        <div class="leg">
+            <p class="supportEmail">Support@homeet.com</p>
+            <p style="margin-top: -30px;" class="downText">Техническая поддержка</p>
+            <section class="xuina">
+                <p class="zaebalo">О сервисе</p>
+                <p class="zaebalo">Контакты</p>
+                <p class="zaebalo">Политика конфиденциальности</p>
+            </section>
+            <div style="margin-top: 100px;" class="line"></div>
+        <p style="margin-top: 60px;" class="downText">Предложение не является публичной офертой.</p>
+        <p style="margin-top: -13px;" class="downText">Сервис не несет ответственности за действия пользователей,
+            достоверность информации и т.д.</p>
+        </div>
+    </section>
+</body>
+</html>

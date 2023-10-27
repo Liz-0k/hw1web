@@ -1,0 +1,244 @@
+.button {
+    color:#9747FF;
+    border-color:#9747FF;
+    background-color:rgb(255, 255, 255);
+    width: auto;
+    height: 40px;
+    border-radius: 8px;
+    font-size: medium;
+    position: relative;
+    border-width: 1px;
+    padding: 10px;
+    border-style: solid;
+    font-family: 'Museo Sans Cyrl300';
+}
+.button:hover {
+    background-color:#F4F4F6;
+}
+#button1 {
+    float: right;
+    margin: 13px 20px;
+}
+.header {
+    height: 70px;
+    width: 1438px;
+    margin-left: -7px;
+    box-shadow: 0px 5px 10px rgb(220, 220, 220);
+}
+.sectionSignUp {
+    height: auto;
+    width: 1040px;
+    margin: auto;
+    margin-top: 40px;
+    /* box-shadow: 0px 0px 20px black; */
+}
+@font-face {
+    font-family: 'Museo Sans Cyrl100';
+    src: url("/src/fonts/MuseoSansCyrl100.otf") format("opentype");
+}
+@font-face {
+    font-family: 'Museo Sans Cyrl300';
+    src: url("/src/fonts/MuseoSansCyrl300.otf") format("opentype");
+}
+@font-face {
+    font-family: 'Museo Sans Cyrl500';
+    src: url("/src/fonts/MuseoSansCyrl500.otf") format("opentype");
+}
+@font-face {
+    font-family: 'Museo Sans Cyrl700';
+    src: url("/src/fonts/MuseoSansCyrl700.otf") format("opentype");
+}
+p {
+    font-family: 'Museo Sans Cyrl300'; 
+}
+.h1 {
+    font-size:xx-large;
+    font-family: 'Museo Sans Cyrl700';
+}
+.p1 {
+    margin-top: 43px;
+    float: left;
+    color: #CCCCCC;
+    font-size:large;
+    font-weight: 700;
+}
+.line {
+    background-color: rgb(220, 220, 220);
+    width: auto;
+    height: 2px;
+}
+.lineGo {
+    background-color:#9747FF;
+    width: 100px;
+    height: 2px;
+}
+.firstParagraph {
+    /* background-color:#CCCCCC; */
+    width: 400px;
+    /* box-shadow: 0px 0px 20px black; */
+}
+.secondParagraph {
+    margin: -18px 0 0 40px;
+}
+.basePart {
+    margin-top: 80px;
+    position: relative;
+    display: flex;
+    width: 1040px;
+    height: auto;
+}
+.sendPhoto {
+    min-height: 150px;
+    border: 3px dashed #CDBDDB;
+    border-radius: 20px;
+    text-align: center;
+    width: 400px;
+}
+#buttonSendPhoto {
+    background-color:#7953C3;
+    color:white;
+    min-width: 110px;
+}
+#buttonSendPhoto:hover {
+    background-color:#673dbb;
+}
+.paleText {
+    color:#CCCCCC;
+}
+.firstParagraphSignUp {
+    min-height: 400px;
+}
+.registrationFieldInput {
+    margin-top: 30px;
+    width: 390px;
+    padding: 20px 10px 20px;
+    background-color:#F4F4F6;
+    font-size: medium;
+    border-radius: 10px;
+    border: none;
+}
+.inputYesNo {
+    display: none;
+}
+.radio {
+    display: inline-block;
+    position: relative;
+    border: 2px solid #7953C3;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    vertical-align: text-top;
+    box-sizing: border-box;
+    margin-right: 5px;
+    border-radius: 300px;
+    background-color:#ffffff;
+}
+.radio:before {
+    content: '';
+    background: #7953C3;
+    width: 8px;
+    height: 8px;
+    opacity: 0;
+    transition: 0.2s;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 300px;
+}
+.inputYesNo:checked + .radio:before {
+    opacity: 1;
+}
+.yourProfile {
+    width: 600px;
+    min-height: 150px; /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    box-shadow: 0px 0px 10px #cdbddb79;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+}
+.text {
+    color: #5D5B66;
+    font-size: medium;
+}
+.secondParagraphFirstColumn {
+    margin: 20px;
+}
+.yourProfilePhoto {
+    height: 150px;
+    width: 150px;
+    border: 1px dashed #CDBDDB;
+    border-radius: 15px;
+}
+#buttonYourProfilePhoto {
+    background-color:#7853c35a;
+    color:white;
+    margin-top: 10px;
+    border-style: none;
+    width: 150px;
+    font-size: small;
+}
+.secondParagraphSecondColumn {
+    margin: 20px 0px 20px;
+    width: 390px;
+    background-color:#9747FF;
+}
+.yourProfileDown {
+    width: 600px;
+    box-shadow: 0px 0px 10px #cdbddb79;
+    border-radius: 15px;
+    margin-top: 25px;
+    padding: 1px 0 3px;
+}
+.yourProfileDownText {
+    margin-left: 20px;
+    min-height: 80px;
+}
+.yourProfileDownTextLeft {
+    text-align: left;
+}
+.yourProfileDownTextRight {
+    text-align: right;
+    margin: -80px 10px 0 0;
+}
+.smile {
+    width: 50px;
+    height: 50px;
+}
+.exampleText {
+    color: #9E9E9E;
+    margin-top: -3px;
+}
+#buttonContinue {
+    float: right;
+    /* background-color:#7853c35a; */
+    background-color:#7953C3;
+    color:white;
+    margin-top: 10px;
+    border-style: none;
+    width: 200px;
+    font-size: small;
+}
+#buttonContinue:hover {
+    background-color:#673dbb;
+}
+.leg {
+    width: 1040px;
+    margin: auto;
+    /* box-shadow: 0px 0px 20px black; */
+}
+.supportEmail {
+    font-size:40px;
+    color: #7953C3;
+    font-family: 'Museo Sans Cyrl700';
+    margin-top: 60px;
+}
+.downText {
+    color: #9E9E9E;
+}
+.xuina {
+    display: flex;
+    float: left;
+}
+.zaebalo {
+    margin-right: 20px;
+}
