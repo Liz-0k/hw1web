@@ -21,8 +21,7 @@
 }
 .header {
     height: 70px;
-    width: 1438px;
-    margin-left: -7px;
+    width: 100%;
     box-shadow: 0px 5px 10px rgb(220, 220, 220);
 }
 .sectionSignUp {
@@ -108,7 +107,11 @@ p {
 .firstParagraphSignUp {
     min-height: 400px;
 }
+.registrationField {
+    position: relative;
+}
 .registrationFieldInput {
+    display: block;
     margin-top: 30px;
     width: 390px;
     padding: 20px 10px 20px;
@@ -116,9 +119,42 @@ p {
     font-size: medium;
     border-radius: 10px;
     border: none;
+    outline: none;
+}
+.registrationFieldInput::placeholder {
+    opacity: 0;
+}
+.registrationFieldLabel {
+    font-family: 'Museo Sans Cyrl300';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0.6rem;
+    display: flex;
+    transform: translateY(-50%);
+    border: none;
+    pointer-events: none;
+    transition: top 0.2s ease-in-out, scale 0.1s ease-in-out;
+    opacity: 0.5;
+}
+#registrationFieldLabelOCEBE {
+    top: 20%;
+}
+.registrationFieldInput:focus~.registrationFieldLabel,
+.registrationFieldInput:not(:placeholder-shown)~.registrationFieldLabel {
+    top: 0;
+    transform: translateX(-10%) translateY(-50%) scale(0.8);
+    opacity: 1;
+}
+.registrationFieldInput:focus~#registrationFieldLabelOCEBE,
+.registrationFieldInput:not(:placeholder-shown)~#registrationFieldLabelOCEBE {
+    top: 0;
 }
 .inputYesNo {
     display: none;
+}
+.exampleText {
+    color: #9E9E9E;
 }
 .radio {
     display: inline-block;
@@ -180,7 +216,27 @@ p {
 .secondParagraphSecondColumn {
     margin: 20px 0px 20px;
     width: 390px;
-    background-color:#9747FF;
+    /* background-color:#9747FF; */
+}
+#descriptionName {
+    font-family: 'Museo Sans Cyrl500';
+    margin-top: 0px;
+}
+.descriptionAll {
+    margin-top: -30px;
+    display: flex;
+    flex: nowrap;
+}
+#descriptionOCebe {
+    margin-top: 0px;
+}
+.circle {
+    background-color:#7953C3 ;
+    opacity: 0.4;
+    height: 7px;
+    width: 7px;
+    border-radius: 10px;
+    margin: 22px 7px 0 7px;
 }
 .yourProfileDown {
     width: 600px;
@@ -203,10 +259,6 @@ p {
 .smile {
     width: 50px;
     height: 50px;
-}
-.exampleText {
-    color: #9E9E9E;
-    margin-top: -3px;
 }
 #buttonContinue {
     float: right;

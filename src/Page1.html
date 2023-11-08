@@ -25,22 +25,38 @@
                 <div class="sendPhoto">
                     <div>
                         <p style="font-size: larger; font-family: 'Museo Sans Cyrl500';">Аватар профиля</p>
-                        <button class="button" id="buttonSendPhoto" >
-                            <!-- <input type="file" name="photo" multiple accept="image/*"> -->
-                            Загрузить</button>
+                        <label for="photo" class="button" id="buttonSendPhoto">
+                            <input type="file" name="photo" id="photo" value="photo" multiple accept="image/*" style="display: none;">
+                            Загрузить
+                        </label>
                     </div>
                     <p class="paleText">Загрузите фотографию весом не более 10 мб</p>
                 </div>
                 <form class="firstParagraphSignUp">
-                    <input name="name" value="" class="registrationFieldInput" placeholder="Имя и фамилия"></input>
-                    <div style="margin-top: 10px; font-family: 'Museo Sans Cyrl300';">
-                        <label><input type="radio" name="radio" value="man" class="inputYesNo"><div class="radio"></div>Парень</label>
-                        <label><input type="radio" name="radio" value="woman" class="inputYesNo"><div class="radio" style="margin-left: 15px"></div>Девушка</label>
+                    <div class="registrationField">
+                        <input type="name" id="nameU" value class="registrationFieldInput" placeholder="Имя и фамилия"></input>
+                        <label for="nameU" class="registrationFieldLabel">Имя и фамилия</label>
                     </div>
-                    <input type="text" value="" class="registrationFieldInput" placeholder="Дата рождения"></input>
-                    <input type="text" value="" class="registrationFieldInput" placeholder="Телеграмм"></input>
-                    <input type="text" value="" class="registrationFieldInput" placeholder="Номер телефона"></input>
-                    <textarea type="text" value="" class="registrationFieldInput" rows="6" placeholder="О себе"></textarea>
+                    <div style="margin-top: 30px; font-family: 'Museo Sans Cyrl300';" id="radio">
+                        <label><input type="radio" name="radio" value="ghgh" class="inputYesNo"><div class="radio"></div>Парень</label>
+                        <label><input type="radio" name="radio" value="roor" class="inputYesNo"><div class="radio" style="margin-left: 15px"></div>Девушка</label>
+                    </div>
+                    <div class="registrationField">
+                        <input type="text" id="date" value class="registrationFieldInput" placeholder="Дата рождения"></input>
+                        <label for="date" class="registrationFieldLabel">Дата рождения (дд.мм.гггг)</label>
+                    </div>
+                    <div class="registrationField">
+                        <input type="text" id="telegram" value="@" class="registrationFieldInput" placeholder="Телеграмм"></input>
+                        <label for="telegram" class="registrationFieldLabel">Телеграмм</label>
+                    </div>
+                    <div class="registrationField">
+                        <input type="text" id="number" value class="registrationFieldInput" placeholder="Номер телефона"></input>
+                        <label for="number" class="registrationFieldLabel">Номер телефона</label>
+                    </div>
+                    <div  class="registrationField">
+                        <textarea type="text" value="" id="personalityInformation" class="registrationFieldInput" rows="6" placeholder="О себе"></textarea>
+                        <label for="personalityInformation" class="registrationFieldLabel" id="registrationFieldLabelOCEBE">О себе</label>
+                    </div>
                 </form>
                 <p class="exampleText">Например: Редко готовлю, но люблю ботать на кухне по ночам.
                     Хочу завести собаку.
@@ -48,14 +64,25 @@
                     Открыт к общению и взаимопомощи :)</p>
             </div>
             <div class="secondParagraph">
-                <p class="text">Так будет выглядеть твоя будущая страничка</p>
+                <p class="text" id="uaua">Так будет выглядеть твоя будущая страничка</p>
                 <section class="yourProfile">
                     <div class="secondParagraphFirstColumn">
                         <article class="yourProfilePhoto"></article>
                         <button class="button" id="buttonYourProfilePhoto">Показать контакты</button>
                     </div>
                     <div class="secondParagraphSecondColumn">
+                        <h2 id="descriptionName">ФИО</h2>
+                        <div class="descriptionAll">
+                            <p id="descriptionRadio">Пол</p>
+                            <div class="circle"></div>
+                            <p id="descriptionAge">Возраст</p>
+                            <div class="circle"></div>
+                            <p>Обучение</p>
+                        </div>
+                        <p id="descriptionOCebe">Редко готовлю, но люблю ботать на кухне по ночам.
+                            Хочу завести собаку.</p>
                     </div>
+                    <script src="/src/js/Homeet.js"></script>
                 </section>
                 <section class="yourProfileDown">
                     <div class="yourProfileDownText">
@@ -77,7 +104,7 @@
             </form>
         </div>
     </section>
-    <section>
+    <footer>
         <div style="margin-top: 200px;" class="line"></div>
         <div class="leg">
             <p class="supportEmail">Support@homeet.com</p>
@@ -92,6 +119,6 @@
         <p style="margin-top: -13px;" class="downText">Сервис не несет ответственности за действия пользователей,
             достоверность информации и т.д.</p>
         </div>
-    </section>
+    </footer>
 </body>
 </html>

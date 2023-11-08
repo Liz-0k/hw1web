@@ -30,31 +30,58 @@
                     <label><input type="radio" name="radio" value="woman" class="inputYesNo"><div class="radio" style="margin-left: 15px"></div>Сотрудник</label>
                 </div>
                 <p class="text" style="margin-top: 25px;">Курс</p>
-                <div class="whatYear">
-                    <label><input type="radio" name="whatYear" value="1" class="whatYearInput"><div class="radioWhatYearInput" id="radioN1">1</div></label>
-                    <label><input type="radio" name="whatYear" value="2" class="whatYearInput"><div class="radioWhatYearInput" id="radioN2">2</div></label>
-                    <label><input type="radio" name="whatYear" value="3" class="whatYearInput"><div class="radioWhatYearInput" id="radioN3">3</div></label>
-                    <label><input type="radio" name="whatYear" value="4" class="whatYearInput"><div class="radioWhatYearInput" id="radioN4">4</div></label>
-                    <label><input type="radio" name="whatYear" value="5" class="whatYearInput"><div class="radioWhatYearInput" id="radioN5">5</div></label>
-                    <label><input type="radio" name="whatYear" value="6" class="whatYearInput"><div class="radioWhatYearInput" id="radioN6">6</div></label>
+                <div id="whatYear">
+                    <div class="whatYear">
+                        <label><input type="radio" name="whatYear" value="1" class="whatYearInput"><div class="radioWhatYearInput" id="radioN1">1</div></label>
+                        <label><input type="radio" name="whatYear" value="2" class="whatYearInput"><div class="radioWhatYearInput" id="radioN2">2</div></label>
+                        <label><input type="radio" name="whatYear" value="3" class="whatYearInput"><div class="radioWhatYearInput" id="radioN3">3</div></label>
+                        <label><input type="radio" name="whatYear" value="4" class="whatYearInput"><div class="radioWhatYearInput" id="radioN4">4</div></label>
+                        <label><input type="radio" name="whatYear" value="5" class="whatYearInput"><div class="radioWhatYearInput" id="radioN5">5</div></label>
+                        <label><input type="radio" name="whatYear" value="6" class="whatYearInput"><div class="radioWhatYearInput" id="radioN6">6</div></label>
+                    </div>
+                    <div style="margin-top: 10px; font-family: 'Museo Sans Cyrl300';">
+                    <label><input type="radio" name="whatYear" value="graduate" class="inputYesNo"><div class="radio"></div>Уже окончил Вышку</label>
+                    </div>
                 </div>
-                <div style="margin-top: 10px; font-family: 'Museo Sans Cyrl300';">
-                <label><input type="radio" name="whatYear" value="graduate" class="inputYesNo"><div class="radio"></div>Уже окончил Вышку</label>
+                <div class="registrationField">
+                    <input type="text" id="bm" value class="registrationFieldInput" placeholder="Ступень образования"></input>
+                    <label for="bm" class="registrationFieldLabel">Ступень образования</label>
                 </div>
-                <input type="text" value="" class="registrationFieldInput" placeholder="Ступень образования"></input>
-                <input type="text" value="" class="registrationFieldInput" placeholder="Факультет"></input>
-                <input type="text" value="" class="registrationFieldInput" placeholder="Образовательная программа"></input>
-                <input type="text" value="" class="registrationFieldInput" placeholder="Работа"></input>
+                <div class="registrationField">
+                    <input type="text" id="miem" value class="registrationFieldInput" placeholder="Факультет" for="education"></input>
+                    <label for="miem" class="registrationFieldLabel">Факультет</label>
+                </div>
+                <div class="registrationField">
+                    <input type="text" id="ivt" value class="registrationFieldInput" placeholder="Образовательная программа"></input>
+                    <label for="ivt" class="registrationFieldLabel">Образовательная программа</label>
+                </div>
+                <div class="registrationField">
+                    <input type="text" id="job" value class="registrationFieldInput" placeholder="Работа"></input>
+                    <label for="job" class="registrationFieldLabel">Работа</label>
+                </div>
             </div>
             <div class="secondParagraph" style="margin-top: -5px;">
-                <p class="text">Так будет выглядеть твоя будущая страничка</p>
                 <section class="yourProfile">
                     <div class="secondParagraphFirstColumn">
                         <article class="yourProfilePhoto"></article>
                         <button class="button" id="buttonYourProfilePhoto">Показать контакты</button>
                     </div>
                     <div class="secondParagraphSecondColumn">
+                        <h2 id="descriptionName">ФИО</h2>
+                        <div class="descriptionAll">
+                            <p id="descriptionRadio">Пол</p>
+                            <div class="circle"></div>
+                            <p id="descriptionAge">Возраст</p>
+                            <div class="circle"></div>
+                            <p id="descriptionStudy">Обучение</p>&nbsp;
+                            <p id="descriptionStudy1"></p>&nbsp;
+                            <p id="descriptionStudy2"></p>&nbsp;
+                            <p id="descriptionStudy3"></p>
+                        </div>
+                        <p id="descriptionOCebe">Редко готовлю, но люблю ботать на кухне по ночам.
+                            Хочу завести собаку.</p>
                     </div>
+                    <script src="/src/js/HomeetPage2.js"></script>
                 </section>
                 <section class="yourProfileDown">
                     <div class="yourProfileDownText">
