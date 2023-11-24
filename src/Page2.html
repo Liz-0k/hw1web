@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="header">
-        <img src="/src/icons/logo.svg" alt="photo" style="margin: 6px 20px;">
+        <img src="/src/icons/logo.svg" alt="photo" class="imgLogo">
         <button id="button1" class="button">Выйти из аккаунта</button>
     </header>
     <section class="sectionSignUp">
@@ -17,7 +17,7 @@
             <form action="http://127.0.0.1:5500/src/Page1.html">
                 <button class="button">Назад</button>
             </form>
-            <section style="display: flex;">
+            <section class="createProfile">
                 <h1 class="h1">Создание профиля</h1>
                 <p class="p1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Образование</p>
             </section>
@@ -25,11 +25,11 @@
         </div>
         <div class="basePart">
             <div class="firstParagraph">
-                <div style="margin-top: 10px; font-family: 'Museo Sans Cyrl300';">
+                <div class="inputYesNoDiv">
                     <label><input type="radio" name="radio" value="man" class="inputYesNo"><div class="radio"></div>Выпусник&nbsp;/&nbsp;Студент</label>
-                    <label><input type="radio" name="radio" value="woman" class="inputYesNo"><div class="radio" style="margin-left: 15px"></div>Сотрудник</label>
+                    <label><input type="radio" name="radio" value="woman" class="inputYesNo"><div class="radio" id="radioStaff"></div>Сотрудник</label>
                 </div>
-                <p class="text" style="margin-top: 25px;">Курс</p>
+                <p class="text" id="kurs">Курс</p>
                 <div id="whatYear">
                     <div class="whatYear">
                         <label><input type="radio" name="whatYear" value="1" class="whatYearInput"><div class="radioWhatYearInput" id="radioN1">1</div></label>
@@ -39,17 +39,23 @@
                         <label><input type="radio" name="whatYear" value="5" class="whatYearInput"><div class="radioWhatYearInput" id="radioN5">5</div></label>
                         <label><input type="radio" name="whatYear" value="6" class="whatYearInput"><div class="radioWhatYearInput" id="radioN6">6</div></label>
                     </div>
-                    <div style="margin-top: 10px; font-family: 'Museo Sans Cyrl300';">
+                    <div class="radioGraduate">
                     <label><input type="radio" name="whatYear" value="graduate" class="inputYesNo"><div class="radio"></div>Уже окончил Вышку</label>
                     </div>
                 </div>
                 <div class="registrationField">
-                    <input type="text" id="bm" value class="registrationFieldInput" placeholder="Ступень образования"></input>
-                    <label for="bm" class="registrationFieldLabel">Ступень образования</label>
+                    <select name="" class="registrationFieldSelect" id="bm">
+                        <option disabled selected class="registrationFieldSelectOption">Ступень образования</option>
+                        <option value="bak" name="bmSelect" class="registrationFieldSelectOption">Бакалавриат</option>
+                        <option value="mag" name="bmSelect" class="registrationFieldSelectOption">Магистратура</option>
+                    </select>                    
                 </div>
                 <div class="registrationField">
-                    <input type="text" id="miem" value class="registrationFieldInput" placeholder="Факультет" for="education"></input>
-                    <label for="miem" class="registrationFieldLabel">Факультет</label>
+                    <select name="" class="registrationFieldSelect" id="miem">
+                        <option disabled selected class="registrationFieldSelectOption">Факультет</option>
+                        <option value="miem" name="miemSelect" class="registrationFieldSelectOption">МИЕМ</option>
+                        <option value="otherXuina" name="miemSelect" class="registrationFieldSelectOption">Другая х..</option>
+                    </select> 
                 </div>
                 <div class="registrationField">
                     <input type="text" id="ivt" value class="registrationFieldInput" placeholder="Образовательная программа"></input>
@@ -60,7 +66,7 @@
                     <label for="job" class="registrationFieldLabel">Работа</label>
                 </div>
             </div>
-            <div class="secondParagraph" style="margin-top: -5px;">
+            <div class="secondParagraph" id="secondParagraphPage2">
                 <section class="yourProfile">
                     <div class="secondParagraphFirstColumn">
                         <article class="yourProfilePhoto"></article>
@@ -75,9 +81,9 @@
                             <div class="circle"></div>
                             <p id="descriptionStudy">Обучение</p>&nbsp;
                             <p id="descriptionStudy1"></p>&nbsp;
-                            <p id="descriptionStudy2"></p>&nbsp;
-                            <p id="descriptionStudy3"></p>
+                            <p id="descriptionStudy2"></p>
                         </div>
+                        <p id="descriptionStudy3"></p>
                         <p id="descriptionOCebe">Редко готовлю, но люблю ботать на кухне по ночам.
                             Хочу завести собаку.</p>
                     </div>
@@ -86,11 +92,11 @@
                 <section class="yourProfileDown">
                     <div class="yourProfileDownText">
                         <div class="yourProfileDownTextLeft">
-                            <p style="font-size: larger;"><b>Расскажи где ты учишься</b></p>
+                            <p class="tellUs"><b>Расскажи где ты учишься</b></p>
                             <p class="text">Часто стденты ищут соседей по схожим интересам</p>
                         </div>
                         <div class="yourProfileDownTextRight">
-                            <img src="/src/icons/happySmile.png" alt="photo" class="smile" style="margin-top: 10px;">
+                            <img src="/src/icons/happySmile.png" alt="photo" class="smile" id="smilePage2">
                         </div>
                     </div>
                 </section>
@@ -101,19 +107,19 @@
         </div>
     </section>
     <section>
-        <div style="margin-top: 200px;" class="line"></div>
+        <div class="line" id="lineDown"></div>
         <div class="leg">
             <p class="supportEmail">Support@homeet.com</p>
-            <p style="margin-top: -30px;" class="downText">Техническая поддержка</p>
+            <p class="downText"  id="tehPog">Техническая поддержка</p>
             <section class="xuina">
                 <p class="zaebalo">О сервисе</p>
                 <p class="zaebalo">Контакты</p>
                 <p class="zaebalo">Политика конфиденциальности</p>
             </section>
-            <div style="margin-top: 100px;" class="line"></div>
-            <p style="margin-top: 60px;" class="downText">Предложение не является публичной офертой.</p>
-            <p style="margin-top: -13px;" class="downText">Сервис не несет ответственности за действия пользователей,
-            достоверность информации и т.д.</p>
+            <div class="line" id="lineDownSecond"></div>
+            <p class="downText" id="predlNe">Предложение не является публичной офертой.</p>
+            <p class="downText" id="serviseNe">Сервис не несет ответственности за действия пользователей,
+                достоверность информации и т.д.</p>
         </div>
     </section>
 </body>

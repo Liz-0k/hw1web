@@ -24,6 +24,9 @@
     width: 100%;
     box-shadow: 0px 5px 10px rgb(220, 220, 220);
 }
+.imgLogo {
+    margin: 6px 20px;
+}
 .sectionSignUp {
     height: auto;
     width: 1040px;
@@ -50,6 +53,9 @@
 p {
     font-family: 'Museo Sans Cyrl300'; 
 }
+.createProfile {
+    display: flex;
+}
 .h1 {
     font-size:xx-large;
     font-family: 'Museo Sans Cyrl700';
@@ -71,6 +77,13 @@ p {
     width: 100px;
     height: 2px;
 }
+.basePart {
+    margin-top: 80px;
+    position: relative;
+    display: flex;
+    width: 1040px;
+    height: auto;
+}
 .firstParagraph {
     /* background-color:#CCCCCC; */
     width: 400px;
@@ -79,19 +92,19 @@ p {
 .secondParagraph {
     margin: -18px 0 0 40px;
 }
-.basePart {
-    margin-top: 80px;
-    position: relative;
-    display: flex;
-    width: 1040px;
-    height: auto;
-}
 .sendPhoto {
-    min-height: 150px;
+    min-height: 50px;
     border: 3px dashed #CDBDDB;
     border-radius: 20px;
     text-align: center;
     width: 400px;
+}
+.sendPhotoAvatar {
+    font-size: larger;
+    font-family: 'Museo Sans Cyrl500';
+}
+#photo {
+    display: none;
 }
 #buttonSendPhoto {
     background-color:#7953C3;
@@ -150,6 +163,10 @@ p {
 .registrationFieldInput:not(:placeholder-shown)~#registrationFieldLabelOCEBE {
     top: 0;
 }
+#radio {
+    margin-top: 30px;
+    font-family: 'Museo Sans Cyrl300';
+}
 .inputYesNo {
     display: none;
 }
@@ -205,6 +222,11 @@ p {
     border: 1px dashed #CDBDDB;
     border-radius: 15px;
 }
+.yourProfilePhoto img{
+    height: auto;
+    width: 150px;
+    border: 2px solid #CDBDDB;
+}
 #buttonYourProfilePhoto {
     background-color:#7853c35a;
     color:white;
@@ -216,6 +238,7 @@ p {
 .secondParagraphSecondColumn {
     margin: 20px 0px 20px;
     width: 390px;
+    white-space: normal;
     /* background-color:#9747FF; */
 }
 #descriptionName {
@@ -229,6 +252,9 @@ p {
 }
 #descriptionOCebe {
     margin-top: 0px;
+}
+#descriptionStudy3 {
+    margin-top: -10px;
 }
 .circle {
     background-color:#7953C3 ;
@@ -252,6 +278,9 @@ p {
 .yourProfileDownTextLeft {
     text-align: left;
 }
+.tellUs {
+    font-size: larger;
+}
 .yourProfileDownTextRight {
     text-align: right;
     margin: -80px 10px 0 0;
@@ -273,6 +302,9 @@ p {
 #buttonContinue:hover {
     background-color:#673dbb;
 }
+#lineDown {
+    margin-top: 200px;
+}
 .leg {
     width: 1040px;
     margin: auto;
@@ -287,10 +319,22 @@ p {
 .downText {
     color: #9E9E9E;
 }
+#tehPog {
+    margin-top: -30px;
+}
 .xuina {
     display: flex;
     float: left;
 }
 .zaebalo {
     margin-right: 20px;
+}
+#lineDownSecond {
+    margin-top: 100px;
+}
+#predlNe {
+    margin-top: 60px;
+}
+#serviseNe {
+    margin-top: -13px;
 }

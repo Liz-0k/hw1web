@@ -3,6 +3,16 @@
     width: 500px;
     height: 2px;
 }
+.inputYesNoDiv {
+    margin-top: 10px;
+    font-family: 'Museo Sans Cyrl300';
+}
+#radioStaff {
+    margin-left: 15px;
+}
+#kurs {
+    margin-top: 25px;
+}
 .whatYear {
     margin-top: -8px;
     height: 65px;
@@ -16,7 +26,7 @@
     display: none;
 }
 .radioWhatYearInput {
-    display:table-cell;
+    display: table-cell;
     position: relative;
     border: none;
     width: 60px;
@@ -27,7 +37,7 @@
     box-sizing: border-box;
     margin-top: 5px;
     border-radius: 5px;
-    background-color:#f3f3f3;
+    background-color:#f4f4f6;
     font-family: 'Museo Sans Cyrl300'; 
 }
 .radioWhatYearInput:hover {
@@ -61,4 +71,31 @@
 .whatYearInput:checked + #radioN5::after,
 .whatYearInput:checked + #radioN6::after {
     opacity: 1;
+}
+.radioGraduate {
+    margin-top: 10px;
+    font-family: 'Museo Sans Cyrl300';
+}
+.registrationFieldSelect {
+    display: block;
+    margin-top: 30px;
+    width: 400px;
+    background-color:#F4F4F6;
+    border: none;
+    font-size: medium;
+    color:#000000;
+    outline: none;
+    padding: 20px 10px;
+    border-radius: 10px;
+    appearance: none;
+    background-image: url('/src/image/10728680.png');
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: 20px; 
+}
+#secondParagraphPage2 {
+    margin-top: -5px;
+}
+#smilePage2 {
+    margin-top: 10px;
 }

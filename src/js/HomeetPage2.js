@@ -26,13 +26,30 @@ whatYear.addEventListener('change', function () {
     } else if (selectedRadio.value == "graduate") {
         descriptionStudy.textContent = "Закончил";
     }
-  });
-bm.addEventListener('input', function() {
-    descriptionStudy1.textContent = ' ' + bm.value;
+});
+bm.addEventListener('change', function(event) {
+    const selectedOption = event.target.value;
+
+    if (selectedOption == "bak") {
+        descriptionStudy1.textContent = "бакалавриат";
+    } else if (selectedOption == "mag") {
+        descriptionStudy1.textContent = "магистратура";
+    }
+});
+miem.addEventListener('change', function(event) {
+    const selectedOption = event.target.value;
+
+    if (selectedOption == "miem") {
+        descriptionStudy2.textContent = "МИЕМ";
+    } else if (selectedOption == "otherXuina") {
+        descriptionStudy2.textContent = "бла-бла";
+    }
 });
 miem.addEventListener('input', function() {
-    descriptionStudy2.textContent = ' ' + miem.value;
+    descriptionStudy2.textContent = '' + miem.value;
 });
 ivt.addEventListener('input', function() {
-    descriptionStudy3.textContent = ' ' + ivt.value;
+    descriptionStudy3.textContent = '' + ivt.value;
 });
+
+  
